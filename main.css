@@ -268,8 +268,7 @@ p.is-inverted {
     height: 13px;
 }
 
-.section {
- 
+.section { 
     overflow: hidden;
 }
 
@@ -351,10 +350,6 @@ p.is-inverted {
     cursor: pointer;
 }
 
-#contactn {
-    font-size: var(--font-lg);
-}
-
 /*Responsive*/
 
 @media(max-width: 1200px) {
@@ -394,6 +389,7 @@ p.is-inverted {
         text-align: center;
         width: 100%;
     }
+    
 }
 
 @media(min-width: 1800px) {
@@ -410,6 +406,19 @@ p.is-inverted {
     }
 }
 
-@media(max-width:320px) {
+@media(max-width:560px) {
 
+    .contactme{
+        margin-left: 60px;
+    }
+
+    .cursorevent {
+        margin-left: 80px;
+    }
+    .form-container{
+        width: 300px;
+    }
+    input{
+        width: 256px;
+    }
 }
