@@ -14,3 +14,5 @@
 
         mail($to, $issue, $msg, $header);
         echo '<script>alert("Correo enviado exitosamente)</script>';
+
+?>
