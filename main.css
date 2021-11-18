@@ -307,6 +307,13 @@ p.is-inverted {
     background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(17,118,255,1) 0%, rgba(0,89,189,1) 0%, rgba(255,250,136,1) 100%);
 }
 
+.contacticon {
+    color:  var(--color-font-highlight);
+    font-size: var(--font-md);
+    margin: 20px 0;
+    flex-direction: row;
+}
+
 .is-row {
     display: flex;
     flex-direction: row;
@@ -340,10 +347,13 @@ p.is-inverted {
     box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
+.cursorevent:hover{
+    cursor: pointer;
+}
+
 #contactn {
     font-size: var(--font-lg);
 }
-
 
 /*Responsive*/
 
@@ -351,11 +361,16 @@ p.is-inverted {
     .hero {
         text-align: center;
         background: none;
+    }
 
+    .biogradiv {
+        flex-direction: column;
+        text-align: center;
     }
     
-    .experience-item.has-cards {
+    .experience-item{
         flex-direction: column;
+        text-align: center;
     }
 
     .curriculum{
@@ -364,6 +379,20 @@ p.is-inverted {
 
     .contact-container{
         flex-direction: column;
+    }
+    
+    .contactme{
+        margin-left: -70px;
+    }
+
+    .title.is-left {
+        text-align: center;
+        width: 100%;
+    }
+
+    .socialdesc {
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -381,3 +410,6 @@ p.is-inverted {
     }
 }
 
+@media(max-width:320px) {
+
+}
