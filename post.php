@@ -12,11 +12,21 @@
         
         $issue = "Mensaje desde mi página";
 
-        if(mail($to, $issue, $msg, $header)){
-            echo '<script>alert("Correo enviado exitosamente")</script>';
-        }else{
-            echo '<script>alert("fallo de envio")</script>';
-        }
+        $mail = mail($to, $issue, $msg, $header);
 
-        echo "<script>setTimeOut(.\"location.href='index.html'\",1000)</script>";
+        if($mail){
+            echo 
+            "<script>
+            alert('Correo enviado exitosamente');
+            window.location = './index.html';
+            </script>
+            ";
+        }else{
+            echo 
+            "<script>
+            alert('fallo de envio');
+            window.location = './index.html';
+            </script>
+            ";
+        }
 ?>

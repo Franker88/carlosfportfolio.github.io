@@ -29,4 +29,3 @@ let wap = document.getElementById("whatsapp");
 wap.addEventListener("click",function(){
     alert("Whatsapp: +58 414 900 83 64")
 })
-
