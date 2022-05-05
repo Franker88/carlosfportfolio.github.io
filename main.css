@@ -183,10 +183,16 @@ input:focus {
 
 .curriculum .row {
   text-align: center;
-  width: 270px;
+  width: 300px;
   background-color: var(--background-highlight);
   margin-bottom: 15px;
   margin-left: 10px;
+  border-radius: 10px;
+}
+
+.platzi {
+  border: solid 5px;
+  border-color: rgb(123, 241, 44);
 }
 
 .contact {
@@ -333,7 +339,7 @@ p.is-inverted {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 0 auto;
   padding: 10px;
   max-width: 2000px;
