@@ -14,12 +14,14 @@
   --background-secundary: #ece6ea;
 
   /*Font Sizes*/
-  --font-base: 10px;
+  --font-base: 1rem;
   --font-sm: 1.2rem;
-  --font-md: 1.6rem;
-  --font-lg: 1.8rem;
-  --font-mlg: 2.2rem;
-  --font-xl: 2.8rem;
+  --font-md: 1.4rem;
+  --font-lg: 1.6rem;
+  --font-mlg: 1.8rem;
+  --font-xl: 2.2rem;
+  --font-tit: 2.5rem;
+  --font-tit-lg: 3rem;
 }
 
 /*Reset*/
@@ -49,6 +51,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  font-size: 62, 5%;
 }
 
 h1,
@@ -153,14 +156,14 @@ input:focus {
 /*Articles*/
 
 .hero {
-  background: url("./assest/Main_photo.png") right no-repeat;
+  background: url("../assest/Main_photo.png") right no-repeat;
   background-size: 500px 550px;
   border-bottom: 2px solid var(--color-primary-highlight);
   background-position: 100% 100%;
 }
 
-.hero_content {
-  max-width: 1000px;
+.hero .container {
+  justify-content: center;
 }
 
 .biography {
@@ -188,6 +191,7 @@ input:focus {
   margin-bottom: 15px;
   margin-left: 10px;
   border-radius: 10px;
+  height: 52px;
 }
 
 .platzi {
@@ -206,7 +210,7 @@ input:focus {
 
 .form-container {
   background: var(--background-primary);
-  width: 600px;
+  width: 100%;
   padding: 20px;
 }
 
@@ -224,15 +228,14 @@ input:focus {
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: auto;
   max-width: 800px;
 }
 
 .title {
-  font-size: 50px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  font-size: var(--font-tit);
+
+  margin: 10px 20px 20px 20px;
 }
 
 .title span {
@@ -342,7 +345,6 @@ p.is-inverted {
   justify-content: center;
   margin: 0 auto;
   padding: 10px;
-  max-width: 2000px;
 }
 
 .normal-button {
@@ -375,7 +377,29 @@ p.is-inverted {
 
 /*Responsive*/
 
-@media (max-width: 1200px) {
+@media (min-width: 1024px) {
+  .form-container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1318px) {
+  p {
+    font-size: var(--font-xl);
+  }
+
+  .card p {
+    font-size: var(--font-lg);
+  }
+
+  .social p {
+    max-height: 72px;
+  }
+}
+
+/*MAX WIDTH OR HEIGHT*/
+
+@media (max-width: 1024px) {
   .hero {
     text-align: center;
     background: none;
@@ -412,12 +436,16 @@ p.is-inverted {
     text-align: center;
     width: 100%;
   }
-}
 
-@media (min-width: 1800px) {
-  .hero {
-    text-align: center;
-    background: none;
+  .form-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-container {
+    width: 100%;
+  }
+  input {
+    width: 100%;
   }
 }
 
@@ -428,7 +456,12 @@ p.is-inverted {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 767px) {
+  .hero {
+    text-align: center;
+    background: none;
+  }
+
   .contactme {
     margin-left: 60px;
   }
@@ -436,10 +469,12 @@ p.is-inverted {
   .cursorevent {
     margin-left: 80px;
   }
-  .form-container {
-    width: 300px;
-  }
-  input {
-    width: 256px;
+}
+
+/*Modificación del Hero*/
+@media (min-width: 1920px) {
+  .hero {
+    text-align: center;
+    background: none;
   }
 }
