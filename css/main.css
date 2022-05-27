@@ -449,7 +449,7 @@ p.is-inverted {
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 799px) {
   .hero {
     text-align: center;
     background: none;
@@ -472,9 +472,8 @@ p.is-inverted {
 }
 
 /*Modificación del Hero*/
-@media (min-width: 1920px) {
+@media (min-width: 1520px) {
   .hero {
-    text-align: center;
-    background: none;
+    background-size: 35%;
   }
 }
