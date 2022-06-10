@@ -194,9 +194,10 @@ input:focus {
   height: 52px;
 }
 
-.platzi {
+.courses {
   border: solid 5px;
-  border-color: rgb(123, 241, 44);
+  border-color: rgb(142, 192, 233);
+  padding-bottom: 10px;
 }
 
 .contact {
